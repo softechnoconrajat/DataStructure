@@ -4,7 +4,7 @@ public class SortedAndRotatedSearch {
 	
 	public static int pivotedBinarySearch(int input[], int n,  int searchItem) {
 		
-		int pivot = findPivot(input, 0, n-1);
+		int pivot = FindPivotUtility.findPivot(input, 0, n-1);
 		
 		if(pivot == -1)
 			return BinarySearchUtility.binarySearch(input, 0, n-1, searchItem);
@@ -19,24 +19,33 @@ public class SortedAndRotatedSearch {
 	
 	}
 	
-	private static int findPivot(int input[], int lowIndex, int highIndex) {
+	
+	
+	//Improved method to solve the above problem.
+	
+	public static int  rotatedArrayBinarySearch(int input[], int startIndex, int lastIndex, int searchItem) {
 		
-		//Base case
-		if(highIndex < lowIndex)
+		if(startIndex > lastIndex)
 			return -1;
-		if(highIndex == lowIndex)
-			return lowIndex;
 		
-		//Normal case
-		int midIndex = (lowIndex + highIndex)/2;
-		if(midIndex < highIndex && input[midIndex] > input[midIndex+1])
+		int midIndex = (lastIndex + startIndex)/2;
+		if(input[midIndex] == searchItem)
 			return midIndex;
-		if(midIndex > lowIndex && input[midIndex] < input[midIndex - 1])
-			return (midIndex-1);
-		if(input[lowIndex] >= input[midIndex])
-			return findPivot(input, lowIndex, midIndex-1);
 		
-		return findPivot(input, midIndex +1, highIndex);	
+		if(input[startIndex]<=input[midIndex])
+		{
+			if(searchItem >= input[startIndex] && searchItem <= input[midIndex])
+				return rotatedArrayBinarySearch(input, startIndex, midIndex-1, searchItem);
+			
+			return rotatedArrayBinarySearch(input, midIndex + 1, lastIndex-1, searchItem);
+		}
+		
+		if(searchItem >=  input[midIndex] && searchItem <= input[lastIndex])
+			return rotatedArrayBinarySearch(input, midIndex + 1, lastIndex, searchItem);
+		
+		return rotatedArrayBinarySearch(input, startIndex, midIndex-1, searchItem);
+		
+		
 		
 	}
 

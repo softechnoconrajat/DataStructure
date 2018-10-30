@@ -47,7 +47,10 @@ public class Caller {
 
 		//CyclicallyRotateByOne.cyclicallyRotateByone(inputArray);
 		
-		int x = SortedAndRotatedSearch.pivotedBinarySearch(inputArray, inputArray.length ,  19);
+		//int x = SortedAndRotatedSearch.pivotedBinarySearch(inputArray, inputArray.length ,  19);
+		
+		int x = SortedAndRotatedSearch.rotatedArrayBinarySearch(inputArray, 0, inputArray.length-1, 2);
+		
 		System.out.println(x);
 		
 	}
