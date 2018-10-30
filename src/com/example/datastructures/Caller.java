@@ -4,6 +4,7 @@ import com.example.datastructures.array.BlockSwapAlgorithm;
 import com.example.datastructures.array.CyclicallyRotateByOne;
 import com.example.datastructures.array.ReversalAlgorithmArrayUtility;
 import com.example.datastructures.array.RotateArrayUtility;
+import com.example.datastructures.array.SortedAndRotatedSearch;
 
 
 public class Caller {
@@ -42,9 +43,12 @@ public class Caller {
 	}
 	
 	private static void cyclicallyRotateByone() {
-		int inputArray[] = {1,2,3,4,5,6,7,8,9,0};
+		int inputArray[] = {2,3,4,5,6,7,8,19,0,1};
 
-		CyclicallyRotateByOne.cyclicallyRotateByone(inputArray);
+		//CyclicallyRotateByOne.cyclicallyRotateByone(inputArray);
+		
+		int x = SortedAndRotatedSearch.pivotedBinarySearch(inputArray, inputArray.length ,  19);
+		System.out.println(x);
 		
 	}
 }
