@@ -2,8 +2,12 @@ package com.example.datastructures;
 
 import com.example.datastructures.array.BlockSwapAlgorithm;
 import com.example.datastructures.array.CyclicallyRotateByOne;
+import com.example.datastructures.array.LeftRotationMultipleTimes;
+import com.example.datastructures.array.MaxSum;
+import com.example.datastructures.array.MaxSumAllRotation;
 import com.example.datastructures.array.ReversalAlgorithmArrayUtility;
 import com.example.datastructures.array.RotateArrayUtility;
+import com.example.datastructures.array.RotationCount;
 import com.example.datastructures.array.SortedAndRotatedSearch;
 
 
@@ -13,7 +17,8 @@ public class Caller {
 //		Caller.testArrayRotation();
 	//	Caller.reversalAlgorithmRotation();
 		//Caller.blockSwapAlgorithmRotation1();
-		Caller.cyclicallyRotateByone();
+		//Caller.cyclicallyRotateByone();
+		Caller.toFindMaxSumInArray();
 	}
 	
 	private static void testArrayRotation() {
@@ -42,16 +47,31 @@ public class Caller {
 		
 	}
 	
-	private static void cyclicallyRotateByone() {
-		int inputArray[] = {2,3,4,5,6,7,8,19,0,1};
-
-		//CyclicallyRotateByOne.cyclicallyRotateByone(inputArray);
+//	private static void cyclicallyRotateByone() {
+//		int inputArray[] = {2,3,4,5,6,7,8,19,0,1};
+//
+//		//CyclicallyRotateByOne.cyclicallyRotateByone(inputArray);
 		
 		//int x = SortedAndRotatedSearch.pivotedBinarySearch(inputArray, inputArray.length ,  19);
 		
-		int x = SortedAndRotatedSearch.rotatedArrayBinarySearch(inputArray, 0, inputArray.length-1, 2);
+//		int x = SortedAndRotatedSearch.rotatedArrayBinarySearch(inputArray, 0, inputArray.length-1, 2);
+//		
+//		System.out.println(x);
+//		
+//	}
+	
+	private static void toFindMaxSumInArray() {
+		int inputArray[] = {19, 0,1,2,3,4,5,6,7,8};
+//		int rotationIndex = 8;
+//		int sizeOfInput = inputArray.length;
 		
-		System.out.println(x);
+//		MaxSum.maxSum(inputArray);
+		
+	//	MaxSumAllRotation.maxSum1(inputArray);
+		
+//		RotationCount.rotaitonCount(inputArray);
+		
+		LeftRotationMultipleTimes.multipleRotaion(inputArray, 39);
 		
 	}
 }
