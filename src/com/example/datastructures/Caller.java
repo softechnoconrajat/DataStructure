@@ -1,8 +1,10 @@
 package com.example.datastructures;
 
 import com.example.datastructures.array.BlockSwapAlgorithm;
+import com.example.datastructures.array.CommonArrayUtility;
 import com.example.datastructures.array.CyclicallyRotateByOne;
 import com.example.datastructures.array.LeftRotationMultipleTimes;
+import com.example.datastructures.array.LeftRotationWithoutExtraSpace;
 import com.example.datastructures.array.MaxSum;
 import com.example.datastructures.array.MaxSumAllRotation;
 import com.example.datastructures.array.ReversalAlgorithmArrayUtility;
@@ -11,6 +13,7 @@ import com.example.datastructures.array.RotationCount;
 import com.example.datastructures.array.RotationWithMaxHammingDistance;
 import com.example.datastructures.array.SortedAndRotatedSearch;
 import com.example.datastructuresUtility.HammingDistanceUtility;
+import com.example.datastructuresUtility.RotationWithinTwoRange;
 
 
 public class Caller {
@@ -88,14 +91,26 @@ public class Caller {
 //
 //
 //	}
+//	
+//	private static void toFindMaxDistanceUsingHammin() {
+//		int inputArray[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+//		
+//		
+//		int x = RotationWithMaxHammingDistance.rotationWithMaxHammingDistance(inputArray);
+//		System.out.println(x);
+//
+//
+//	}
 	
 	private static void toFindMaxDistanceUsingHammin() {
-		int inputArray[] = {1,2,1};
+		int inputArray[] = {1,2,3,4,5,6,7,8,9,10};
 		
 		
-		int x = RotationWithMaxHammingDistance.rotationWithMaxHammingDistance(inputArray);
-		System.out.println(x);
-
+//		LeftRotationWithoutExtraSpace.leftRotation(inputArray, 2);
+		
+		int x[] = RotationWithinTwoRange.rotationWithinRange(inputArray, 1, 6);
+		CommonArrayUtility.printArrayElements(x);
+		
 
 	}
 }
