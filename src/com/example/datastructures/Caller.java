@@ -8,7 +8,9 @@ import com.example.datastructures.array.MaxSumAllRotation;
 import com.example.datastructures.array.ReversalAlgorithmArrayUtility;
 import com.example.datastructures.array.RotateArrayUtility;
 import com.example.datastructures.array.RotationCount;
+import com.example.datastructures.array.RotationWithMaxHammingDistance;
 import com.example.datastructures.array.SortedAndRotatedSearch;
+import com.example.datastructuresUtility.HammingDistanceUtility;
 
 
 public class Caller {
@@ -18,7 +20,9 @@ public class Caller {
 	//	Caller.reversalAlgorithmRotation();
 		//Caller.blockSwapAlgorithmRotation1();
 		//Caller.cyclicallyRotateByone();
-		Caller.toFindMaxSumInArray();
+		//Caller.toFindMaxSumInArray();
+		//Caller.toFindHammingDistance();
+		Caller.toFindMaxDistanceUsingHammin();
 	}
 	
 	private static void testArrayRotation() {
@@ -60,18 +64,40 @@ public class Caller {
 //		
 //	}
 	
-	private static void toFindMaxSumInArray() {
-		int inputArray[] = {19, 0,1,2,3,4,5,6,7,8};
-//		int rotationIndex = 8;
-//		int sizeOfInput = inputArray.length;
+//	private static void toFindMaxSumInArray() {
+//		int inputArray[] = {19, 0,1,2,3,4,5,6,7,8};
+////		int rotationIndex = 8;
+////		int sizeOfInput = inputArray.length;
+//		
+////		MaxSum.maxSum(inputArray);
+//		
+//	//	MaxSumAllRotation.maxSum1(inputArray);
+//		
+////		RotationCount.rotaitonCount(inputArray);
+//		
+//		LeftRotationMultipleTimes.multipleRotaion(inputArray, 39);
+//		
+//	}
+	
+//	private static void toFindHammingDistance() {
+//		int inputArray1[] = {0,1,2,3,4,5,6,7,8, 19};
+//		int inputArray2[] = {19, 1,1,3,3,4,5,7,8,8};
+//		
+//		int x = HammingDistance.hammingDistanceCalculation(inputArray1, inputArray2);
+//		System.out.println(x);
+//
+//
+//	}
+	
+	private static void toFindMaxDistanceUsingHammin() {
+		int inputArray[] = {1,2,1};
 		
-//		MaxSum.maxSum(inputArray);
 		
-	//	MaxSumAllRotation.maxSum1(inputArray);
-		
-//		RotationCount.rotaitonCount(inputArray);
-		
-		LeftRotationMultipleTimes.multipleRotaion(inputArray, 39);
-		
+		int x = RotationWithMaxHammingDistance.rotationWithMaxHammingDistance(inputArray);
+		System.out.println(x);
+
+
 	}
 }
+
+
