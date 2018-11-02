@@ -1,5 +1,6 @@
 package com.example.datastructures;
 
+import com.example.datastructures.array.ArrangingArrayAtEvenAndOdd;
 import com.example.datastructures.array.BlockSwapAlgorithm;
 import com.example.datastructures.array.CommonArrayUtility;
 import com.example.datastructures.array.CyclicallyRotateByOne;
@@ -13,6 +14,8 @@ import com.example.datastructures.array.RotationCount;
 import com.example.datastructures.array.RotationWithMaxHammingDistance;
 import com.example.datastructures.array.SortedAndRotatedSearch;
 import com.example.datastructuresUtility.HammingDistanceUtility;
+import com.example.datastructuresUtility.MergeShortUtility;
+import com.example.datastructuresUtility.ReverseAnArrayUtility;
 import com.example.datastructuresUtility.RotationWithinTwoRange;
 
 
@@ -103,13 +106,23 @@ public class Caller {
 //	}
 	
 	private static void toFindMaxDistanceUsingHammin() {
-		int inputArray[] = {1,2,3,4,5,6,7,8,9,10};
+		int inputArray[] = {9,12,31,4,5};
 		
 		
 //		LeftRotationWithoutExtraSpace.leftRotation(inputArray, 2);
 		
-		int x[] = RotationWithinTwoRange.rotationWithinRange(inputArray, 1, 6);
-		CommonArrayUtility.printArrayElements(x);
+//		int x[] = RotationWithinTwoRange.rotationWithinRange(inputArray, 1, 6);
+//		CommonArrayUtility.printArrayElements(x);
+		
+//		int x[] = ReverseAnArrayUtility.reverseArray(inputArray);
+//		CommonArrayUtility.printArrayElements(x);
+		
+//		int x[] = MergeShortUtility.mergeShort(inputArray);
+//		CommonArrayUtility.printArrayElements(x);
+		
+		ArrangingArrayAtEvenAndOdd.arrangeEvenOdd(inputArray);
+		
+		
 		
 
 	}
