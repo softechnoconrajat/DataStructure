@@ -1,6 +1,6 @@
 package com.example.datastructures.array;
 
-import com.example.datastructuresUtility.MergeShortUtility;
+import com.example.datastructuresUtility.MergeSortUtility;
 
 public class ArrangingArrayAtEvenAndOdd {
 	public static void arrangeEvenOdd(int input[]) {
@@ -8,7 +8,7 @@ public class ArrangingArrayAtEvenAndOdd {
 		int[] shortedPositionArray = new int[input.length];
 		//Shorting the Array Using mergeShore.
 		
-		MergeShortUtility.mergeShort(input);
+		MergeSortUtility.mergeShort(input);
 		
 		int midOfInput = input.length/2;
 		int i = 0;

@@ -14,7 +14,8 @@ import com.example.datastructures.array.RotationCount;
 import com.example.datastructures.array.RotationWithMaxHammingDistance;
 import com.example.datastructures.array.SortedAndRotatedSearch;
 import com.example.datastructuresUtility.HammingDistanceUtility;
-import com.example.datastructuresUtility.MergeShortUtility;
+import com.example.datastructuresUtility.MergeSortUtility;
+import com.example.datastructuresUtility.QuickSortUtility;
 import com.example.datastructuresUtility.ReverseAnArrayUtility;
 import com.example.datastructuresUtility.RotationWithinTwoRange;
 
@@ -120,10 +121,10 @@ public class Caller {
 //		int x[] = MergeShortUtility.mergeShort(inputArray);
 //		CommonArrayUtility.printArrayElements(x);
 		
-		ArrangingArrayAtEvenAndOdd.arrangeEvenOdd(inputArray);
+	//	ArrangingArrayAtEvenAndOdd.arrangeEvenOdd(inputArray);
 		
-		
-		
+		int x[] = QuickSortUtility.quickSort(inputArray, 0, inputArray.length - 1);
+		CommonArrayUtility.printArrayElements(x);
 
 	}
 }

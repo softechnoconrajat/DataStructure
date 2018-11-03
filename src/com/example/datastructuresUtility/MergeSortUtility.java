@@ -1,8 +1,6 @@
 package com.example.datastructuresUtility;
 
-import com.example.datastructures.array.CommonArrayUtility;
-
-public class MergeShortUtility {
+public class MergeSortUtility {
 	
 	public static int[] mergeShort(int input[]) {
 	
