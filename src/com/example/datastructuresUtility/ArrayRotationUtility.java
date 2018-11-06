@@ -7,14 +7,14 @@ public class ArrayRotationUtility {
 		public static int[] leftRotateArray(int input[], int rotationIndex) {
 			
 			if (input == null || input.length == 0) {
-				System.out.println("No array elements to rotate");
+			//	System.out.println("No array elements to rotate");
 				return null;
 			}
 			
 			int actualRoationCount = rotationIndex % input.length;
 			
 			if(actualRoationCount == 0) {
-				CommonArrayUtility.printArrayElements(input);
+			//	CommonArrayUtility.printArrayElements(input);
 				return null;			
 			}
 					

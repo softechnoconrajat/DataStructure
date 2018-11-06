@@ -4,6 +4,7 @@ import com.example.datastructures.array.ArrangingArrayAtEvenAndOdd;
 import com.example.datastructures.array.BlockSwapAlgorithm;
 import com.example.datastructures.array.CommonArrayUtility;
 import com.example.datastructures.array.CyclicallyRotateByOne;
+import com.example.datastructures.array.DFEMZ;
 import com.example.datastructures.array.LeftRotationMultipleTimes;
 import com.example.datastructures.array.LeftRotationWithoutExtraSpace;
 import com.example.datastructures.array.MaxSum;
@@ -18,6 +19,7 @@ import com.example.datastructuresUtility.MergeSortUtility;
 import com.example.datastructuresUtility.QuickSortUtility;
 import com.example.datastructuresUtility.ReverseAnArrayUtility;
 import com.example.datastructuresUtility.RotationWithinTwoRange;
+import com.example.datastructuresUtility.SortingInBuiltUtility;
 
 
 public class Caller {
@@ -107,7 +109,7 @@ public class Caller {
 //	}
 	
 	private static void toFindMaxDistanceUsingHammin() {
-		int inputArray[] = {9,12,31,4,5};
+		int inputArray[] = {0, 2, 2, 2, 0, 6, 6, 0, 0, 8};
 		
 		
 //		LeftRotationWithoutExtraSpace.leftRotation(inputArray, 2);
@@ -123,7 +125,13 @@ public class Caller {
 		
 	//	ArrangingArrayAtEvenAndOdd.arrangeEvenOdd(inputArray);
 		
-		int x[] = QuickSortUtility.quickSort(inputArray, 0, inputArray.length - 1);
+//		int x[] = QuickSortUtility.quickSort(inputArray, 0, inputArray.length - 1);
+//		CommonArrayUtility.printArrayElements(x);
+		
+//		int x[] = SortingInBuiltUtility.sorting(inputArray);
+//		CommonArrayUtility.printArrayElements(x);
+		
+		int x[] = DFEMZ.doublefirstElementMovetoZero(inputArray);
 		CommonArrayUtility.printArrayElements(x);
 
 	}
