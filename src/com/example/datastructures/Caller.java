@@ -1,5 +1,8 @@
 package com.example.datastructures;
 
+import java.util.Vector;
+
+import com.example.datastructures.array.ArrangeNumbertoGetBiggestNumber;
 import com.example.datastructures.array.ArrangingArrayAtEvenAndOdd;
 import com.example.datastructures.array.BlockSwapAlgorithm;
 import com.example.datastructures.array.CommonArrayUtility;
@@ -9,6 +12,7 @@ import com.example.datastructures.array.LeftRotationMultipleTimes;
 import com.example.datastructures.array.LeftRotationWithoutExtraSpace;
 import com.example.datastructures.array.MaxSum;
 import com.example.datastructures.array.MaxSumAllRotation;
+import com.example.datastructures.array.RearrangePositiveAndNegativeNumber;
 import com.example.datastructures.array.ReversalAlgorithmArrayUtility;
 import com.example.datastructures.array.RotateArrayUtility;
 import com.example.datastructures.array.RotationCount;
@@ -109,7 +113,15 @@ public class Caller {
 //	}
 	
 	private static void toFindMaxDistanceUsingHammin() {
-		int inputArray[] = {0, 2, 2, 2, 0, 6, 6, 0, 0, 8};
+		//int inputArray[] = {12, 11, -13, -5, 6, -7, 5, -3, -6};
+		
+		Vector<String> arr = new Vector<>();
+		arr.add("12");
+		arr.add("77");
+		arr.add("187");
+		arr.add("99");
+		arr.add("123");
+		arr.add("99");
 		
 		
 //		LeftRotationWithoutExtraSpace.leftRotation(inputArray, 2);
@@ -131,9 +143,18 @@ public class Caller {
 //		int x[] = SortingInBuiltUtility.sorting(inputArray);
 //		CommonArrayUtility.printArrayElements(x);
 		
-		int x[] = DFEMZ.doublefirstElementMovetoZero(inputArray);
-		CommonArrayUtility.printArrayElements(x);
-
+//		int x[] = DFEMZ.doublefirstElementMovetoZero(inputArray);
+//		CommonArrayUtility.printArrayElements(x);
+		
+		
+//		int x[] = RearrangePositiveAndNegativeNumber.rearrangePositiveNegative(inputArray);
+//		CommonArrayUtility.printArrayElements(x);
+		
+		
+		ArrangeNumbertoGetBiggestNumber.printLargest(arr);
+		//CommonArrayUtility.printArrayElements(arr);
+		
+		
 	}
 }
 
