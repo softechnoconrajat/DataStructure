@@ -7,5 +7,14 @@ public class CommonArrayUtility {
 			System.out.println(arr[i]);
 		}
 	}
+	
+	public static void printStringArrayElements(String arr[]) {
+		for(int i = 0; i < arr.length; i++) {
+			if(arr[i] != null) {
+				System.out.print(arr[i]);
+			}
+			
+		}
+	}
 
 }

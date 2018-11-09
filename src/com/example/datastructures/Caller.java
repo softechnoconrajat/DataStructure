@@ -24,6 +24,10 @@ import com.example.datastructuresUtility.QuickSortUtility;
 import com.example.datastructuresUtility.ReverseAnArrayUtility;
 import com.example.datastructuresUtility.RotationWithinTwoRange;
 import com.example.datastructuresUtility.SortingInBuiltUtility;
+import com.example.datastructures.Strings.AdjacentAreNotSame;
+import com.example.datastructures.Strings.MissingPangramCharacter;
+import com.example.datastructures.Strings.PangramChecking;
+import com.example.datastructures.Strings.RemovingPunctuations;
 
 
 public class Caller {
@@ -35,7 +39,9 @@ public class Caller {
 		//Caller.cyclicallyRotateByone();
 		//Caller.toFindMaxSumInArray();
 		//Caller.toFindHammingDistance();
-		Caller.toFindMaxDistanceUsingHammin();
+		//Caller.toFindMaxDistanceUsingHammin();
+		
+		Caller.panagramResult();
 	}
 	
 	private static void testArrayRotation() {
@@ -112,17 +118,17 @@ public class Caller {
 //
 //	}
 	
-	private static void toFindMaxDistanceUsingHammin() {
-		//int inputArray[] = {12, 11, -13, -5, 6, -7, 5, -3, -6};
-		
-		Vector<String> arr = new Vector<>();
-		arr.add("12");
-		arr.add("77");
-		arr.add("187");
-		arr.add("99");
-		arr.add("123");
-		arr.add("99");
-		
+//	private static void toFindMaxDistanceUsingHammin() {
+//		//int inputArray[] = {12, 11, -13, -5, 6, -7, 5, -3, -6};
+//		
+//		Vector<String> arr = new Vector<>();
+//		arr.add("12");
+//		arr.add("77");
+//		arr.add("187");
+//		arr.add("99");
+//		arr.add("123");
+//		arr.add("99");
+//		
 		
 //		LeftRotationWithoutExtraSpace.leftRotation(inputArray, 2);
 		
@@ -151,11 +157,29 @@ public class Caller {
 //		CommonArrayUtility.printArrayElements(x);
 		
 		
-		ArrangeNumbertoGetBiggestNumber.printLargest(arr);
+		//ArrangeNumbertoGetBiggestNumber.printLargest(arr);
 		//CommonArrayUtility.printArrayElements(arr);
 		
 		
+//	}
+	
+	private static void panagramResult() {
+		
+//		boolean result;
+//		result = PangramChecking.pangram("The quick brown fox jumps over the lazy dog");
+//		System.out.println(result);
+		
+		//MissingPangramCharacter.missingPangram("The quick brown fox jumps over the lazy");
+		
+//		String[] removingPunctuations = RemovingPunctuations.removingPunctuation("Hello!!!, he said ---and went.");
+//		CommonArrayUtility.printStringArrayElements(removingPunctuations);
+		
+		String[] adjacentAreNotSame = AdjacentAreNotSame.adjacentAreNotSame("aaabc");
+		CommonArrayUtility.printStringArrayElements(adjacentAreNotSame);
 	}
+		
+			
+		
 }
 
 
