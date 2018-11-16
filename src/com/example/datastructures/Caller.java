@@ -25,9 +25,16 @@ import com.example.datastructuresUtility.ReverseAnArrayUtility;
 import com.example.datastructuresUtility.RotationWithinTwoRange;
 import com.example.datastructuresUtility.SortingInBuiltUtility;
 import com.example.datastructures.Strings.AdjacentAreNotSame;
+import com.example.datastructures.Strings.CheckingDuckNumber;
+import com.example.datastructures.Strings.FindOneExtraCharacter;
+import com.example.datastructures.Strings.InputIsInteger;
 import com.example.datastructures.Strings.MissingPangramCharacter;
+import com.example.datastructures.Strings.NameInitials;
+import com.example.datastructures.Strings.NearestMultipleOfTen;
 import com.example.datastructures.Strings.PangramChecking;
 import com.example.datastructures.Strings.RemovingPunctuations;
+import com.example.datastructures.Strings.StringToNewCharacterSet;
+import com.example.datastructures.Strings.isCharSame;
 
 
 public class Caller {
@@ -174,8 +181,48 @@ public class Caller {
 //		String[] removingPunctuations = RemovingPunctuations.removingPunctuation("Hello!!!, he said ---and went.");
 //		CommonArrayUtility.printStringArrayElements(removingPunctuations);
 		
-		String[] adjacentAreNotSame = AdjacentAreNotSame.adjacentAreNotSame("aaabc");
-		CommonArrayUtility.printStringArrayElements(adjacentAreNotSame);
+//		String[] adjacentAreNotSame = AdjacentAreNotSame.adjacentAreNotSame("aaabc");
+//		CommonArrayUtility.printStringArrayElements(adjacentAreNotSame);
+//		
+//		boolean x = InputIsInteger.isInteger("123");
+//		if(x==true) {
+//			System.out.println("Is Integer");
+//		}else {
+//			System.out.println("not an integer");
+//		}
+		
+		
+		
+//		boolean x =isCharSame.isCharSame("geeks");
+//		if(x==true) {
+//			System.out.println("Is same");
+//		}else {
+//			System.out.println("Is not same");
+//		}
+		
+//		NameInitials.nameInitails("My Name Is khan");
+		
+//		boolean x = CheckingDuckNumber.isDuckNumber("020345");
+//		if(x==true) {
+//			System.out.println("Is Duck Number");
+//		}else {
+//			System.out.println("Is not Duck Number");
+//		}
+		
+//		int x = NearestMultipleOfTen.nearestMultipleOfTen(1234);
+//		
+//			System.out.println(x);
+		
+//		StringToNewCharacterSet.newCharacterSet("egrt");
+		
+		FindOneExtraCharacter.oneExtraChar("kxml", "klxml");
+		
+		
+		
+		
+//		
+		
+				
 	}
 		
 			
