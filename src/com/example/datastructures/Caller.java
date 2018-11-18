@@ -26,6 +26,7 @@ import com.example.datastructuresUtility.RotationWithinTwoRange;
 import com.example.datastructuresUtility.SortingInBuiltUtility;
 import com.example.datastructures.Strings.AdjacentAreNotSame;
 import com.example.datastructures.Strings.CheckingDuckNumber;
+import com.example.datastructures.Strings.ExpandStringNumberFromRange;
 import com.example.datastructures.Strings.FindOneExtraCharacter;
 import com.example.datastructures.Strings.InputIsInteger;
 import com.example.datastructures.Strings.MissingPangramCharacter;
@@ -34,6 +35,7 @@ import com.example.datastructures.Strings.NearestMultipleOfTen;
 import com.example.datastructures.Strings.PangramChecking;
 import com.example.datastructures.Strings.RemovingPunctuations;
 import com.example.datastructures.Strings.StringToNewCharacterSet;
+import com.example.datastructures.Strings.SwapFirstAndLastCharacterOfWords;
 import com.example.datastructures.Strings.isCharSame;
 
 
@@ -215,12 +217,12 @@ public class Caller {
 		
 //		StringToNewCharacterSet.newCharacterSet("egrt");
 		
-		FindOneExtraCharacter.oneExtraChar("kxml", "klxml");
+		//FindOneExtraCharacter.oneExtraChar("kxml", "klxml");
 		
 		
+//		SwapFirstAndLastCharacterOfWords.swapCharacter("Hi IMRAJAT");
 		
-		
-//		
+		ExpandStringNumberFromRange.expandString("10-12");
 		
 				
 	}

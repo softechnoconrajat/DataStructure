@@ -2,7 +2,7 @@ package com.example.datastructures.Strings;
 
 public class NameInitials {
 	
-	@SuppressWarnings("deprecation")
+	
 	public static void nameInitails(String input) {
 		
 		int i;
