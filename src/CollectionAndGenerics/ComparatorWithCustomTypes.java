@@ -18,10 +18,16 @@ public class ComparatorWithCustomTypes {
 		items.add(new Students("Pankaj", 1));
 		items.add(new Students("Gaurav",2));
 		
+		//Using Comparator Interface
 		
-		Collections.sort(items, (st1, st2) -> {
-			return st1.roll_No > st2.roll_No ? 1: st1.roll_No < st2.roll_No ?-1:0;
-		});
+//		Collections.sort(items, (st1, st2) -> {
+//			return st1.roll_No > st2.roll_No ? 1: st1.roll_No < st2.roll_No ?-1:0;
+//		});
+		
+		//By using Comparable Interface
+		Collections.sort(items);
+		
+		
 		
 		for(Students i : items) {
 			System.out.println(i.Name);
@@ -34,7 +40,7 @@ public class ComparatorWithCustomTypes {
 }
 
 
-class Students{
+class Students implements Comparable<Students>{
 	String Name;
 	int roll_No;
 	
@@ -49,6 +55,12 @@ class Students{
 	public String toString() {
 		// TODO Auto-generated method stub
 		return super.toString();
+	}
+
+	@Override
+	public int compareTo(Students o) {
+		// TODO Auto-generated method stub
+		return this.roll_No > o.roll_No ? -1 : this.roll_No < o.roll_No ? 1 : 0;
 	}
 	
 }
