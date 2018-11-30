@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author rajatkumar
- *
- */
-package DesignPattern;

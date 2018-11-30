@@ -11,7 +11,6 @@ public class MainClass implements Main {
 	public void add(ListenerInterface obj) {
 		// TODO Auto-generated method stub
 		arrayObj.add(obj);
-		
 	}
 
 	@Override
@@ -31,9 +30,12 @@ public class MainClass implements Main {
 		}	
 	}
 	
-	public static void broadCastData() {
+	public void broadCastData() {
 		
 		System.out.println("Returning Data");
+		
+		toNotify();
+		
 		
 	}
 	

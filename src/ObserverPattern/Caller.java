@@ -9,10 +9,8 @@ public class Caller {
 		MobileListener mL = new MobileListener(mainObj);
 		TvOSListener tvOS = new TvOSListener(mainObj);
 		
-		mainObj.add(tvOS);
-		mainObj.add(mL);
 		
-		mainObj.toNotify();
+		mainObj.broadCastData();
 				
 	}
 
