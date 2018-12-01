@@ -6,10 +6,7 @@ public class CallerString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		regExpression();
-		
-		
+		regExpression();		
 	}
 	
 	private static void regExpression() {
