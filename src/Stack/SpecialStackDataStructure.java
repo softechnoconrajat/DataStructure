@@ -19,11 +19,9 @@ public class SpecialStackDataStructure {
 				lastValue = x;
 				
 			}else {
-				st2.push(lastValue);
-				
+				st2.push(lastValue);		
 			}
 		}
-		
 	}
 	
 	//Pop Operation
@@ -48,14 +46,11 @@ public class SpecialStackDataStructure {
 		
 		return st2.pop();
 		
+		
 	
 		
 	}
 	
-	
-	
-	
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
