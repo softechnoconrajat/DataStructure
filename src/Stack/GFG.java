@@ -10,6 +10,7 @@ class GFG{
 		Queue<Integer> q1 = new LinkedList<Integer>();
 		Queue<Integer> q2 = new LinkedList<Integer>();
 		
+		
 		public StackImplementationUsingQueue() {
 			
 		}
