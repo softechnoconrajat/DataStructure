@@ -60,6 +60,7 @@ public class InsertNode {
 		
 	}
 	
+	
 	public static void main(String args[]) {
 		
 		root = new Node(10);
@@ -69,8 +70,14 @@ public class InsertNode {
 		insert(root, 50);
 		insert(root, 60);
 		insert(root, 70);
+		
+		LevelOrderTraversal.levelOrder(root);
+		
+		DeleteNode.delete(root, 20);
+		
+		LevelOrderTraversal.levelOrder(root);
 	
-		inorder(root);
+		//inorder(root);
 		
 	}
 
