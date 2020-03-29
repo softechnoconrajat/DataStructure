@@ -6,6 +6,7 @@ public class HouseTheif {
 
     public int houseTheif(int index, int[] houseArray){
 
+
         if(index > houseArray.length - 1){
             return 0;
         }
