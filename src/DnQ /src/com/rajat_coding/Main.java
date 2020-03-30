@@ -1,5 +1,6 @@
 package com.rajat_coding;
 
+import com.rajat.problems.ConvertOneStringToAnother;
 import com.rajat.problems.HouseTheif;
 
 public class Main {
@@ -19,14 +20,27 @@ public class Main {
 
 
         long startTime = System.nanoTime();
-        System.out.println(x.houseTheifDnP(0, a));
+//        System.out.println(x.houseTheifDnP(0, a));
         long endTime = System.nanoTime();
         long timeElapsed = endTime - startTime;
 
-        System.out.println("Execution time in nanoseconds  : " + timeElapsed);
+//        System.out.println("Execution time in nanoseconds  : " + timeElapsed);
+//
+//        System.out.println("Execution time in milliseconds : " +
+//                timeElapsed / 1000000);
 
-        System.out.println("Execution time in milliseconds : " +
-                timeElapsed / 1000000);
+
+        /**
+         * Convert one String to Another
+         *
+         * */
+        ConvertOneStringToAnother convertOneStringToAnother= new ConvertOneStringToAnother();
+//       int resultConvertOneStringToAnother = convertOneStringToAnother.convertOneStringToAnother("table", "tbres", 0, 0);
+
+        System.out.println("resultConvertOneStringToAnother");
+        System.out.println(convertOneStringToAnother.convertOneStringToAnother("table", "tbres", 0, 0));
+        System.out.println(convertOneStringToAnother.convertOneStringToAnotherDnQTopDown("table", "tbres", 0, 0));
+
 
     }
 }
