@@ -73,6 +73,28 @@ public class Main {
         int[][] dp2 = new int[ex1.length() + 1][ex1.length() + 1];
         System.out.println(lSS.lSPTopDownApproach(dp2, ex1, 0, ex1.length() - 1));
 
+//        MinCostToReachEndofArray
+
+        /**
+         * MinCostToReachEndofArray
+         *
+         * */
+        MinCostToReachEndofArray minCostToReachEndofArray = new MinCostToReachEndofArray();
+        System.out.println(minCostToReachEndofArray.minCostToReachEndofArray(4, 4));
+        int[][] dp3 = new int[5][5];
+        System.out.println(minCostToReachEndofArray.mctreoaTopDown(dp3, 4,4));
+
+
+        /**
+         * NumberofEndPath
+         *
+         * */
+        NumberofEndPath numberofEndPath = new NumberofEndPath();
+        System.out.println(       numberofEndPath.numberOfPathToTheEnd(25, 3, 3));
+        int[][] dp4= new int[4][4];
+        System.out.println(numberofEndPath.dpTopDown(dp4, 25, 3, 3));
+
+
 
 
     }
