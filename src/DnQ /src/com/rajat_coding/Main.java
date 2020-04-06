@@ -1,5 +1,8 @@
 package com.rajat_coding;
 
+import com.LeetCodeChanllenge.HappyNumber;
+import com.LeetCodeChanllenge.GroupsAnagram;
+import com.LeetCodeChanllenge.SingleNumber;
 import com.rajat.problems.*;
 
 public class Main {
@@ -89,10 +92,35 @@ public class Main {
          * NumberofEndPath
          *
          * */
-        NumberofEndPath numberofEndPath = new NumberofEndPath();
-        System.out.println(       numberofEndPath.numberOfPathToTheEnd(25, 3, 3));
-        int[][] dp4= new int[4][4];
-        System.out.println(numberofEndPath.dpTopDown(dp4, 25, 3, 3));
+      //  NumberofEndPath numberofEndPath = new NumberofEndPath();
+     //   System.out.println(       numberofEndPath.numberOfPathToTheEnd(25, 3, 3));
+       // int[][] dp4= new int[4][4];
+       // System.out.println(numberofEndPath.dpTopDown(dp4, 25, 3, 3));
+
+
+        int[] abc = {2, 2, 1};
+        SingleNumber s = new SingleNumber();
+        System.out.println(s.singleNumber(abc));
+
+        HappyNumber hN = new HappyNumber();
+        System.out.println(String.valueOf(hN.isHappy(2)));
+
+
+        /**
+         * Anagram
+         *
+         * Good Concept for string
+         *
+         * and
+         *
+         * HashMap.
+         *
+         * */
+        String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
+        GroupsAnagram groupsAnagram = new GroupsAnagram();
+        System.out.println(groupsAnagram.groupAnagram(strs));
+
+
 
 
 
